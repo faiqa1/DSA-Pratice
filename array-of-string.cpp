@@ -1,10 +1,5 @@
-// C++ program to demonstrate
-// array of strings using
-// string class
-#include <iostream>
-#include <string>
-
-// Driver code
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
 // Initialize String Array

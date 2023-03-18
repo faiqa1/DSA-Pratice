@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void countFreq(int arr[], int n)
+void countFreq(string arr[], int n)
 {
 	// Mark all array elements as not visited
 	vector<bool> visited(n, false);
@@ -29,9 +29,13 @@ void countFreq(int arr[], int n)
 
 int main()
 {
-	int arr[] = { 10, 20, 20, 10, 10, 20, 5, 20 };
+	//string arr[] = { "geeks", "word" , "lenghth" };
+	string arr[5];
+	
+	for(int b=0;b<5;b++)
+	cin>>arr[b];
+	
 	int n = sizeof(arr) / sizeof(arr[0]);
 	countFreq(arr, n);
-	return 0;
+	
 }
-
