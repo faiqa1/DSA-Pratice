@@ -32,7 +32,9 @@ int main(){
 #include<bits/stdc++.h>
 using namespace std;
 
-void sortOne(int arr[], int n){
+void sortOne(int arr[], int n){      //only swap elements when we find 1 on the left side and 0 on the right side. 
+                                    //We move the left pointer forward if the element is 0, and move the right pointer 
+                                    //backward if the element is 1
     int left = 0, right = n - 1;
     while (left < right) {
         if (arr[left] == 1 && arr[right] == 0) {
